@@ -1,0 +1,44 @@
+* {
+    color: white;
+    background-color: black;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    margin: 0%;
+}
+
+main {
+    padding: 20px 20px 50px 50px;
+}
+
+ul {
+    padding: 0%;
+    margin: 0%;
+    display: flex;
+    gap: 50px;
+    justify-content: center;
+}
+
+li {
+    list-style-type: none;
+    padding: 10px;
+    background-color: black;
+}
+
+nav {
+    background-color: #DA3E44;
+    padding-left: 15%;
+    padding-right: 15%;
+}
+
+a {
+    background-color: transparent;
+    color: white;
+    text-decoration: none;
+}
+
+a:active {
+    color: white;
+}
+
+a:hover {
+    color: white;
+}
