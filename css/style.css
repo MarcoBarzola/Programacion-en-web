@@ -1,0 +1,15 @@
+* {
+    color: white;
+    background-color: black;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif
+}
+a {
+    color:blue;
+}
+a:active{
+    color:blue;
+}
+
+a:hover{
+    color:cyan;
+}
