@@ -1,44 +1,229 @@
 * {
-    color: white;
-    background-color: black;
-    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
-    margin: 0%;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
 }
 
-main {
-    padding: 20px 20px 50px 50px;
-}
-
-ul {
-    padding: 0%;
-    margin: 0%;
-    display: flex;
-    gap: 50px;
-    justify-content: center;
-}
-
-li {
-    list-style-type: none;
-    padding: 10px;
-    background-color: black;
+body {
+    background-color: #1a1a1a;
+    color: #f0f0f0;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    line-height: 1.6;
 }
 
 nav {
     background-color: #DA3E44;
-    padding-left: 15%;
-    padding-right: 15%;
+    padding: 15px 20px;
+}
+
+ul {
+    padding: 0;
+    margin: 0;
+    display: flex;
+    gap: 40px;
+    justify-content: center;
+    list-style: none;
+}
+
+li {
+    list-style-type: none;
+    padding: 8px 15px;
 }
 
 a {
-    background-color: transparent;
     color: white;
     text-decoration: none;
-}
-
-a:active {
-    color: white;
+    font-weight: bold;
+    letter-spacing: 0.5px;
+    transition: color 0.3s ease;
 }
 
 a:hover {
+    color: #ffcccc;
+}
+
+a:active {
+    color: #ff9999;
+}
+
+h1 {
+    text-align: center;
+    padding: 30px 20px;
+    font-size: 2em;
+    color: #ffffff;
+    background-color: #222222;
+    border-bottom: 3px solid #DA3E44;
+}
+
+h2 {
+    color: #DA3E44;
+    font-size: 1.5em;
+    margin-bottom: 15px;
+    padding-bottom: 8px;
+    border-bottom: 2px solid #333333;
+}
+
+main {
+    max-width: 900px;
+    margin: 0 auto;
+    padding: 40px 30px;
+}
+
+section {
+    margin-bottom: 35px;
+    padding: 25px;
+    background-color: #222222;
+    border-radius: 8px;
+    border-left: 4px solid #DA3E44;
+}
+
+p {
+    color: #cccccc;
+    line-height: 1.8;
+    margin-bottom: 10px;
+}
+
+section ul {
+    display: block;
+    padding-left: 20px;
+    margin-top: 10px;
+}
+
+section li {
+    padding: 6px 0;
+    color: #cccccc;
+    list-style-type: disc;
+}
+
+img {
+    display: block;
+    margin: 20px auto;
+    max-width: 100%;
+    height: auto;
+    border-radius: 8px;
+}
+
+strong {
+    color: #ffffff;
+}
+
+footer {
+    background-color: #111111;
+    padding: 20px;
+    text-align: center;
+    border-top: 2px solid #DA3E44;
+    margin-top: 30px;
+}
+
+fieldset {
+    border: 1px solid #444444;
+    border-radius: 8px;
+    padding: 25px;
+    background-color: #2a2a2a;
+}
+
+label {
+    color: #f0f0f0;
+    font-weight: bold;
+    font-size: 0.95em;
+}
+
+input,
+textarea {
+    width: 100%;
+    max-width: 450px;
+    padding: 12px 15px;
+    margin-top: 8px;
+    border: 1px solid #555555;
+    border-radius: 6px;
+    background-color: #333333;
+    color: #f0f0f0;
+    font-family: inherit;
+    font-size: 1em;
+    transition: border-color 0.3s ease;
+}
+
+input:focus,
+textarea:focus {
+    outline: none;
+    border-color: #DA3E44;
+}
+
+textarea {
+    min-height: 120px;
+    resize: vertical;
+}
+
+button {
+    background-color: #DA3E44;
     color: white;
+    padding: 12px 30px;
+    border: none;
+    border-radius: 6px;
+    cursor: pointer;
+    font-weight: bold;
+    font-size: 1em;
+    margin-top: 15px;
+    transition: background-color 0.3s ease;
+}
+
+button:hover {
+    background-color: #c0353a;
+}
+
+form div {
+    margin-bottom: 15px;
+}
+
+@media (max-width: 768px) {
+    ul {
+        flex-direction: column;
+        gap: 5px;
+        align-items: center;
+    }
+
+    li {
+        padding: 6px 10px;
+    }
+
+    h1 {
+        font-size: 1.5em;
+        padding: 20px 15px;
+    }
+
+    h2 {
+        font-size: 1.2em;
+    }
+
+    main {
+        padding: 20px 15px;
+    }
+
+    section {
+        padding: 15px;
+        margin-bottom: 20px;
+    }
+
+    input,
+    textarea {
+        max-width: 100%;
+    }
+
+    fieldset {
+        padding: 15px;
+    }
+}
+
+@media (min-width: 769px) {
+    nav {
+        padding: 18px 40px;
+    }
+
+    ul {
+        gap: 50px;
+    }
+
+    main {
+        padding: 50px 40px;
+    }
 }
