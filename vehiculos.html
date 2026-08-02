@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="es">
+    <header>
+        <meta charset="UTF-8">
+        <link rel="stylesheet" href="css/style.css">
+        <link rel="stylesheet" href="vehiculos.css">
+        <title>Vehículos - Renta de Carros XYZ</title>
+        <nav>
+            <ul>
+                <li><a href="index.html">Inicio</a></li>
+                <li><a href="conocenos.html">Conócenos</a></li>
+                <li><a href="contacto.html">Contacto</a></li>
+                <li><a href="#">Vehículos</a></li>
+            </ul>
+        </nav>
+    </header>
+    <body>
+        <head>
+            <h1>Vehículos Disponibles</h1>
+        </head>
+        <main>
+            <section>
+                <h2>Nuestra Flota</h2>
+                <p>Selecciona el vehículo que deseas rentar haciendo clic sobre él.</p>
+                <div id="vehiculos-grid" class="vehiculos-grid"></div>
+            </section>
+
+            <section id="seccion-reserva">
+                <h2>Formulario de Reserva</h2>
+                <form id="formulario-reserva">
+                    <fieldset>
+                        <div>
+                            <label>Vehículo Seleccionado:</label>
+                            <br>
+                            <div id="vehiculo-seleccionado-display" class="vehiculo-display">
+                                Haz clic en un vehículo de la lista para seleccionarlo
+                            </div>
+                        </div>
+                        <br>
+                        <div>
+                            <label for="fecha-inicio">Fecha de Inicio:</label>
+                            <br>
+                            <input type="date" id="fecha-inicio" required>
+                        </div>
+                        <br>
+                        <div>
+                            <label for="fecha-fin">Fecha de Finalización:</label>
+                            <br>
+                            <input type="date" id="fecha-fin" required>
+                        </div>
+                        <br>
+                        <div>
+                            <button type="submit">Confirmar Reservación</button>
+                        </div>
+                    </fieldset>
+                </form>
+            </section>
+
+            <div id="confirmacion-reserva"></div>
+
+        </main>
+        <footer>
+        </footer>
+    </body>
+    <script src="vehiculos.js"></script>
+</html>
